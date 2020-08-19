@@ -1,0 +1,255 @@
+/* 头部区域 */
+header {
+  width: 100%;
+  height: 5.88rem;
+  background-color: rgba(204, 232, 207, 1);
+  padding-bottom: 0.75rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+header .options {
+  margin: 0 auto;
+  display: flex;
+}
+
+.options p {
+  font-size: 0.88rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(29, 17, 40, 1);
+  line-height: 1.25rem;
+  margin-right: 0.32rem;
+}
+
+.options .arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.arrow .fa-angle-down {
+  font-weight: bolder;
+  color: #242a42;
+}
+
+.content {
+  padding: 0.88rem 0.63rem;
+  padding-bottom: 6.19rem;
+  box-sizing: border-box;
+}
+
+/* 轮播框区域 */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-swiper {
+  position: relative;
+  width: 100%;
+  height: 9.13rem;
+  line-height: 9.13rem;
+  margin: auto;
+  overflow: hidden;
+  background-color: #d8d8d8;
+  border-radius: 0.63rem;
+}
+
+.swiper-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  overflow: hidden;
+  animation: swiper 10s steps(1, end) infinite;
+  transition: left 1s linear;
+}
+
+.swiper-slide {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  display: block;
+  height: 100%;
+}
+
+@keyframes swiper {
+  0%,
+  100% {
+    left: 0;
+  }
+
+  20% {
+    left: -100%;
+  }
+
+  40% {
+    left: -200%;
+  }
+
+  60% {
+    left: -300%;
+  }
+
+  80% {
+    left: -400%;
+  }
+
+  /* 100% {
+    left: -500%;
+  } */
+}
+
+/* 商品区域 */
+.commodity {
+  margin-top: 2.44rem;
+}
+
+.commodity .titleSec {
+  width: 4rem;
+  height: 1.38rem;
+  font-size: 1rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(29, 17, 40, 1);
+  padding-left: 0.95rem;
+  position: relative;
+  margin-bottom: 0.88rem;
+}
+
+.setMeal .titleSec {
+  width: 6rem !important;
+}
+
+.titleSec::after {
+  content: "";
+  display: block;
+  width: 0.32rem;
+  height: 1rem;
+  background: rgba(204, 232, 207, 1);
+  border-radius: 0.07rem;
+  position: absolute;
+  left: 0;
+  top: 0.19rem;
+}
+
+.shopBox {
+  overflow-x: scroll;
+}
+
+.shop {
+  width: max-content;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.shop .shopItem {
+  display: flex;
+  width: 7.5rem;
+  height: 10.57rem;
+  background: rgba(216, 216, 216, 1);
+  border-radius: 0.63rem;
+  margin-right: 0.63rem;
+}
+
+.shop .shopItem:last-child {
+  margin-right: 0;
+}
+
+.restaurants {
+  width: max-content;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.restaurantItem {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.69rem;
+}
+
+.restaurantItem:last-child {
+  margin-right: 0;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.63rem;
+}
+
+.items:last-child {
+  margin-bottom: 0;
+}
+
+.items .photo {
+  width: 2.82rem;
+  height: 2.82rem;
+  background: rgba(216, 216, 216, 1);
+  border-radius: 0.63rem;
+  margin-right: 0.63rem;
+}
+
+.items .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.items .info .name {
+  font-size: 0.88rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(29, 17, 40, 1);
+  line-height: 1.25rem;
+}
+
+.items .info .type {
+  font-size: 0.75rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(81, 79, 89, 1);
+  line-height: 1.07rem;
+}
+
+/* 脚部 */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.88rem;
+  background: rgba(255, 255, 255, 1);
+  border-top: 0.06rem solid #e9e9e9;
+  padding-top: 0.56rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footerItem {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .choose i,footer .choose p {
+  color: #CCE8CF;
+}
+
+.footerItem i,.footerItem p {
+  margin: 0 auto;
+  text-align: center;
+  color: #514F59;
+}
+
+.footerItem p {
+  margin-top: 0.3rem;
+}
